@@ -29,6 +29,6 @@ Hi! I'm Abhisek Gupta, a full-stack web developer building production-ready web 
 ---
 
 ## 🔹 Contact / Links
-- [GitHub]([https://github.com/abhisekgupta-dev?tab=repositories)  
+- [GitHub](https://github.com/abhisekgupta-dev?tab=repositories)  
 - [LinkedIn](https://www.linkedin.com/in/abhisek-gupta-205793278/)  
 - [Portfolio / Website](https://abhisekgupta.me)  

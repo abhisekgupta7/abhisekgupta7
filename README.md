@@ -12,20 +12,31 @@ Based in Nepal 🇳🇵 — Open to remote opportunities worldwide.
 
 A student can ask Cognora to explain a concept — in English, Hindi, or Nepali — and get a real answer, generated quizzes, automatic evaluation, and a performance report in their inbox.
 
-Built AI-native from day one: content ingestion, tutoring, assessment, and reporting are all part of one designed pipeline, not features bolted onto an existing app.
+**Architecture:** 4 services — Next.js frontend, FastAPI backend, a dedicated worker, and Redis as the job queue. Long-running AI tasks (transcript processing, quiz generation) run async via the worker so the API never blocks on slow operations.
 
 **Stack:** Next.js · FastAPI · Docker · Redis · AWS EC2 · CI/CD pipelines
 
-**What it does:**
-- Multilingual tutoring (English / Hindi / Nepali) with streaming responses
-- On-demand quiz generation from course content
-- Automatic student evaluation based on understanding
-- Personalized performance reports sent via email
-- Works with courses with or without transcripts
-
-This is my second production AI system — after OpScale, this pushed me into full end-to-end ownership: product, AI, backend, frontend, DevOps, and deployment.
-
 **Repo:** [github.com/abhisekgupta7/Cognora](https://github.com/abhisekgupta7/Cognora)
+
+---
+
+## 📦 More Projects
+
+### [OpScale](https://opscale-roan.vercel.app) — AI-Powered Wholesale Operations Platform
+`Next.js` `TypeScript` `PostgreSQL` `LangGraph` `FastAPI` `Railway`
+
+A LangGraph AI agent with 5 business intelligence tools — dealers query overdue payments, revenue, and sales data in plain English. FastAPI backend streams responses to Next.js via SSE.
+
+### [PayBridge](https://paybridge-docs.vercel.app) — Open Source Payment SDK
+`TypeScript` `Turborepo` `pnpm` `Khalti API`
+
+Published `@paybridgejs/khalti` on npm — a production-ready TypeScript SDK unifying Nepali payment gateway integration. Two functions (`initiate`/`verify`), full type safety, framework-agnostic. eSewa SDK in progress.
+
+```bash
+npm install @paybridgejs/khalti
+```
+
+**Repo:** [github.com/abhisekgupta7/paybridge](https://github.com/abhisekgupta7/paybridge)
 
 ---
 
@@ -35,35 +46,16 @@ This is my second production AI system — after OpScale, this pushed me into fu
 Next.js (App Router) · React · TypeScript · Tailwind CSS · shadcn/ui · SSE Streaming
 
 **Backend**
-FastAPI (Python) · Node.js · REST APIs · JWT · Clerk  Webhooks · RBAC
+FastAPI (Python) · Node.js · REST APIs · JWT · Clerk · Stripe Webhooks · RBAC
 
 **AI & Agents**
-LangChain · LangGraph  · RAG · Agentic AI · OpenAI API · Gemini API
+LangChain · LangGraph · LangSmith · RAG · Agentic AI · OpenAI API · Gemini API
 
 **Infrastructure**
-AWS EC2 · Docker · Redis · CI/CD pipelines · Vercel 
+AWS EC2 · Docker · Redis (job queues) · CI/CD pipelines · Turborepo · Vercel · Railway
 
 **Databases**
-PostgreSQL · Drizzle ORM · Neon  — schema design, indexing, query optimization
-
----
-
-## 📦 Other Projects
-
-### [OpScale — AI-Powered Wholesale Operations Platform](https://opscale-roan.vercel.app)
-`Next.js` `TypeScript` `PostgreSQL` `LangGraph` `FastAPI` `Railway`
-
-LangGraph AI agent with 5 business intelligence tools — dealers query overdue payments, revenue, and sales data in plain English. FastAPI backend streams responses to Next.js via SSE.
-
-### [E-Commerce Platform — Multi-Role Merchant System](https://ecommerce-eta-one-33.vercel.app)
-`Next.js` `TypeScript` `PostgreSQL` `Drizzle ORM` `ImageKit` `JWT` `Stripe`
-
-Role-based access control (merchant/admin/customer), idempotent Stripe webhook processing, ImageKit CDN delivery.
-
-### [AI Text Summarization Platform](https://everything-eight-bice.vercel.app)
-`Next.js` `TypeScript` `OpenAI` `Gemini` `Stripe`
-
-Text/PDF ingestion with AI summary generation, Stripe subscription tiers, usage-gated access.
+PostgreSQL · Drizzle ORM · Neon · MongoDB — schema design, indexing, query optimization
 
 ---
 

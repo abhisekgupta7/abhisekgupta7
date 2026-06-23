@@ -33,16 +33,16 @@ This is my second production AI system — after OpScale, this pushed me into fu
 Next.js (App Router) · React · TypeScript · Tailwind CSS · shadcn/ui · SSE Streaming
 
 **Backend**
-FastAPI (Python) · Node.js · REST APIs · JWT · Clerk · Stripe Webhooks · RBAC
+FastAPI (Python) · Node.js · REST APIs · JWT · Clerk · Webhooks · RBAC
 
 **AI & Agents**
-LangChain · LangGraph · LangSmith · RAG · Agentic AI · OpenAI API · Gemini API
+LangChain · LangGraph · LangSmith · RAG · Agentic AI  · Gemini API
 
 **Infrastructure**
-AWS EC2 · Docker · Redis · CI/CD pipelines · Vercel · Railway
+AWS EC2 · Docker · Redis · CI/CD pipelines · Vercel 
 
 **Databases**
-PostgreSQL · Drizzle ORM · Neon · MongoDB — schema design, indexing, query optimization
+PostgreSQL · Drizzle ORM · Neon  — schema design, indexing, query optimization
 
 ---
 

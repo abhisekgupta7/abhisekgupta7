@@ -25,6 +25,8 @@ Built AI-native from day one: content ingestion, tutoring, assessment, and repor
 
 This is my second production AI system — after OpScale, this pushed me into full end-to-end ownership: product, AI, backend, frontend, DevOps, and deployment.
 
+**Repo:** [github.com/abhisekgupta7/Cognora](https://github.com/abhisekgupta7/Cognora)
+
 ---
 
 ## 🛠 Tech Stack
@@ -33,10 +35,10 @@ This is my second production AI system — after OpScale, this pushed me into fu
 Next.js (App Router) · React · TypeScript · Tailwind CSS · shadcn/ui · SSE Streaming
 
 **Backend**
-FastAPI (Python) · Node.js · REST APIs · JWT · Clerk · Webhooks · RBAC
+FastAPI (Python) · Node.js · REST APIs · JWT · Clerk  Webhooks · RBAC
 
 **AI & Agents**
-LangChain · LangGraph · LangSmith · RAG · Agentic AI  · Gemini API
+LangChain · LangGraph  · RAG · Agentic AI · OpenAI API · Gemini API
 
 **Infrastructure**
 AWS EC2 · Docker · Redis · CI/CD pipelines · Vercel 

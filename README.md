@@ -1,70 +1,67 @@
 # Hi, I'm Abhisek Gupta 👋
 
-Full-Stack Developer building AI-powered SaaS products with Next.js, TypeScript, and Python.
+Full-Stack Developer building AI-native SaaS products — Next.js, FastAPI, and infrastructure designed around AI from day one.
 
 Based in Nepal 🇳🇵 — Open to remote opportunities worldwide.
 
 ---
 
-## 🚀 What I'm Building
+## 🚀 Flagship Project
 
-**[OpScale](https://opscale-roan.vercel.app)** — An AI-powered wholesale operations platform.
-Wholesale dealers manage orders, inventory, payments, and a khata (credit ledger) — and now query their entire business in plain English via an AI agent built with LangGraph and FastAPI.
+### [Cognora](https://cognora-frontend.abhisekgupta7.com.np) — Multilingual AI Tutor for LMS Platforms
 
-> *"Which customers haven't paid in 30 days?"*
-> *"What's my top selling product this month?"*
-> *"Draft payment reminders for overdue buyers."*
+A student can ask Cognora to explain a concept — in English, Hindi, or Nepali — and get a real answer, generated quizzes, automatic evaluation, and a performance report in their inbox.
 
-The agent queries live PostgreSQL data and streams answers in real time to the Next.js dashboard.
+Built AI-native from day one: content ingestion, tutoring, assessment, and reporting are all part of one designed pipeline, not features bolted onto an existing app.
+
+**Stack:** Next.js · FastAPI · Docker · Redis · AWS EC2 · CI/CD pipelines
+
+**What it does:**
+- Multilingual tutoring (English / Hindi / Nepali) with streaming responses
+- On-demand quiz generation from course content
+- Automatic student evaluation based on understanding
+- Personalized performance reports sent via email
+- Works with courses with or without transcripts
+
+This is my second production AI system — after OpScale, this pushed me into full end-to-end ownership: product, AI, backend, frontend, DevOps, and deployment.
 
 ---
 
 ## 🛠 Tech Stack
 
 **Frontend**
-Next.js (App Router) · React · TypeScript · Tailwind CSS · shadcn/ui · SSR/SSG
+Next.js (App Router) · React · TypeScript · Tailwind CSS · shadcn/ui · SSE Streaming
 
 **Backend**
-Node.js · FastAPI (Python) · REST APIs · JWT · Clerk · Stripe Webhooks · RBAC
+FastAPI (Python) · Node.js · REST APIs · JWT · Clerk · Stripe Webhooks · RBAC
 
 **AI & Agents**
-LangChain · LangGraph · LangSmith · RAG · Agentic AI · OpenAI API · Gemini API · SSE Streaming
-
-**Databases**
-PostgreSQL · Drizzle ORM · Neon · MongoDB · Schema design · Indexing · Query optimization
+LangChain · LangGraph · LangSmith · RAG · Agentic AI · OpenAI API · Gemini API
 
 **Infrastructure**
-Vercel · Railway · Git · GitHub · ImageKit · CI/CD · Preview deploys
+AWS EC2 · Docker · Redis · CI/CD pipelines · Vercel · Railway
+
+**Databases**
+PostgreSQL · Drizzle ORM · Neon · MongoDB — schema design, indexing, query optimization
 
 ---
 
-## 📦 Featured Projects
+## 📦 Other Projects
 
 ### [OpScale — AI-Powered Wholesale Operations Platform](https://opscale-roan.vercel.app)
-`Next.js` `TypeScript` `PostgreSQL` `LangGraph` `FastAPI` `Clerk` `Vercel` `Railway`
+`Next.js` `TypeScript` `PostgreSQL` `LangGraph` `FastAPI` `Railway`
 
-- Credit ledger (khata) system tracking deferred/partial payments and running balances per buyer
-- LangGraph AI agent with 5 business intelligence tools — natural language queries over live business data
-- FastAPI backend on Railway streaming responses to Next.js frontend via SSE
-- Multi-branch support with org_id scoped data isolation
-
----
+LangGraph AI agent with 5 business intelligence tools — dealers query overdue payments, revenue, and sales data in plain English. FastAPI backend streams responses to Next.js via SSE.
 
 ### [E-Commerce Platform — Multi-Role Merchant System](https://ecommerce-eta-one-33.vercel.app)
 `Next.js` `TypeScript` `PostgreSQL` `Drizzle ORM` `ImageKit` `JWT` `Stripe`
 
-- Role-based access control (merchant / admin / customer) with JWT auth
-- Relational PostgreSQL schema with indexed queries for performance
-- Idempotent Stripe webhook processing and ImageKit CDN delivery
-
----
+Role-based access control (merchant/admin/customer), idempotent Stripe webhook processing, ImageKit CDN delivery.
 
 ### [AI Text Summarization Platform](https://everything-eight-bice.vercel.app)
-`Next.js` `TypeScript` `PostgreSQL` `OpenAI` `Gemini` `Stripe`
+`Next.js` `TypeScript` `OpenAI` `Gemini` `Stripe`
 
-- Text and PDF ingestion with AI summary generation via OpenAI and Gemini
-- Stripe subscription tiers ($9/$19) with usage-gated access and per-user quota enforcement
-- Retry logic and structured error handling for rate-aware AI API integration
+Text/PDF ingestion with AI summary generation, Stripe subscription tiers, usage-gated access.
 
 ---
 
